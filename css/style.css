@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #195b72;
+    --light-color: #FAFAFA;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--light-color);
+    font-size: 24px;
+}
+
+.navbar a {
+    color: var(--light-color);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(25,91,114,0.85), rgba(25,91,114,0.85));
+    color: var(--light-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* NEWS */
+.news {
+    padding: 60px 0;
+}
+
+.news h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.carousel-item {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* HIGHLIGHTS */
+.highlights {
+    background-color: #f1f1f1;
+    padding: 60px 0;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.highlight-box {
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 0;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--light-color);
+    margin-left: 15px;
+    text-decoration: none;
+}
