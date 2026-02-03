@@ -421,3 +421,192 @@ body {
         position: relative;
     }
 }
+
+
+/* FOOTER GRID */
+.footer-grid {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: var(--accent-color);
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* CONTATO */
+.footer-contact {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #e0e0e0;
+}
+
+/* REDES SOCIAIS */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+/* PÁGINAS LEGAIS */
+.legal-page {
+    padding: 80px 0;
+    background-color: #f3f3f3;
+}
+
+.legal-card {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--accent-color);
+}
+
+.legal-card h3 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.legal-intro {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.legal-section {
+    margin-bottom: 35px;
+}
+
+.legal-section h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.legal-section h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 18px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+}
+
+.legal-section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .legal-card {
+        padding: 35px 25px;
+    }
+
+    .legal-card h3 {
+        font-size: 26px;
+    }
+}
+
+/* HERO CONTATO - COMPACTO */
+.hero-contact {
+    padding: 70px 20px 80px;
+}
+
+.contact-hero-bar {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.contact-hero-bar a {
+    background-color: rgba(255,255,255,0.18);
+    padding: 10px 16px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-color);
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.contact-hero-bar a:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: var(--accent-color);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero-contact {
+        padding: 60px 15px 70px;
+    }
+
+    .contact-hero-bar a {
+        font-size: 13px;
+        padding: 9px 14px;
+    }
+}
+
