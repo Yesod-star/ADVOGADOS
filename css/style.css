@@ -375,6 +375,30 @@ html,body {
 .footer-links a:hover::after {
     width: 100%;
 }
+@media (max-width: 768px) {
+
+    .area-row {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .area-row.reverse {
+        flex-direction: column;
+    }
+
+    .area-image img {
+        height: auto;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .area-text {
+        max-width: 100%;
+    }
+
+}
 
 
 @media (max-width: 768px) {
