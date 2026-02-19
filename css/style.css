@@ -132,12 +132,16 @@ html,body {
 .highlight-box h4{
     text-transform: uppercase;
     margin-bottom: 20px;
-    text-decoration: underline;
+    font-family: serif;
 }
 
 .highlight-box:hover{
     transition-duration: 3s;
     transform: scale(1.1);
+}
+
+.highlight-box p{
+    font-family: serif;
 }
 
 textarea{
@@ -289,12 +293,11 @@ textarea{
 }
 
 .highlight-box {
-    background-color: #fff;
     padding: 30px;
     text-align: center;
     border-radius: 8px;
-    border-top: 4px solid var(--accent-color);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 
